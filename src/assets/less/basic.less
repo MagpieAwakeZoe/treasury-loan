@@ -1,0 +1,145 @@
+@import "text";
+@import "icons";
+
+body {
+    font-family: PingFangSC-Regular, Helvetica, "Droid Sans", Arial,sans-serif;
+    color: #1a1a1a;
+    line-height: 1.4;
+    background-color: #f2f2f2;
+    font-size: 14px;
+    -webkit-tap-highlight-color: transparent;
+    ::-webkit-scrollbar { display: none; }
+}
+
+body,
+h2,
+h3,
+h4,
+h5,
+html,
+img,
+input,
+input,
+li,
+p,
+small,
+ul, ol {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+a:hover, a:visited, a:link, a:active {
+    text-decoration: none;
+    color: #1a1a1a;
+}
+input, button{
+    outline: none;
+}
+
+input,textarea{
+    -webkit-appearance: none;
+}
+
+.clearfix:after{
+    content: " ";
+    display: block;
+    clear: both;
+    height: 0;
+}
+
+.clearfix {
+    zoom: 1;
+}
+
+.require-icon{
+    font-size: 10px;
+    color: @red;
+    font-style: normal;
+    margin-right: 4px;
+}
+// reset som-ui style
+.som-search-bar .som-search .som-search__cancel-btn{
+    color: @blue;
+}
+.som-search-bar--light .som-search__form:before{
+    top: -2px;
+}
+.som-search-bar--fixed .som-search::after{
+    border-bottom: none;
+}
+.som-search-bar--fixed{
+    background: #f2f2f2;
+}
+.som-button{
+    height: 40px;
+    border-radius: 21px;
+    height: 40px;
+    line-height: 40px;
+    font-weight: bold;
+}
+.som-button:after{
+    border-radius: 42px;
+}
+
+.som-button+.som-button{
+    margin: 0;
+}
+.som-button--default168{
+    background: #F0F0F0;
+}
+.som-button--default168:after{
+    border: 1px solid #F0F0F0;
+}
+.som-button--plain--primary:not(.som-button--plain-disabled):active{
+    color: #FFF;
+    border-color: @blue;
+    background-color: @blue;
+}
+
+.som-modal .som-modal__btn_primary, .som-button--plain--primary,
+.som-picker .som-picker__cancel, .som-picker .som-picker__confirm{
+    color: @blue;
+}
+//
+.som-scroll-refresh{
+    -webkit-overflow-scrolling: touch;
+}
+.som-tab-item.som-tab-selected .som-tab-label{
+    color: @blue;
+}
+.som-tabs .som-tabs-bar-inner{
+    background-color: @blue;
+}
+input::-webkit-input-placeholder {
+    color: #ccc !important;
+}
+input::-moz-input-placeholder {
+    color: #ccc !important;
+}
+input::-ms-input-placeholder {
+    color: #ccc !important;
+}
+
+.som-textarea .som-list-item__bd{
+    padding: 12px 0 8px 0;
+}
+
+.isAlipay {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 52px;
+    .content {
+        overflow-y: scroll;
+        height: calc(~'100vh - 44px');
+    }
+    .som-image-upload {
+        margin-bottom: 100px;
+    }
+}
+
+.som-scroll-infinite {
+    margin-bottom: 70px;
+}
